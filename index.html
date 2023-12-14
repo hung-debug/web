@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            margin: auto;
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
+    <title>Ứng dụng Mua Bán Bài Viết</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo" width="50" height="44">
+          </a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hoạt động</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-success mr-2" onclick="navigateToOrderForm()">Đặt Hàng</button>
+            <button class="btn btn-info" onclick="navigateToOrderList()">Danh Sách Đơn Hàng</button>
+        </div>
+      </nav>
+      
+    <main>
+        <section id="contentRequests">
+            <!-- Dữ liệu sẽ được cập nhật bằng JavaScript -->
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="150" height="150">
+            </a>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <ul class="list-unstyled mb-0">
+                <li>
+                <a href="#!" class="text-dark">Trang chủ</a>
+                </li>
+                <li>
+                <a href="#!" class="text-dark">Giới thiệu</a>
+                </li>
+            </ul>
+            </div>  
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.111881126403!2d105.7544583742538!3d20.948021690548728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452eac0f6d383%3A0x64c60a0d30589702!2zxJDhuqFpIEjhu41jIMSQ4bqhaSBOYW0!5e0!3m2!1svi!2s!4v1702568197208!5m2!1svi!2s" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        </div>
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function navigateToOrderForm() {
+            window.location.href = "orderForm.html";
+        }
+
+        function navigateToOrderList() {
+            window.location.href = "orderList.html";
+        }
+    </script>
+</body>
+</html>
